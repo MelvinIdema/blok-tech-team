@@ -26,3 +26,10 @@
 <br>
 
 <p align="right">Dit moest ik even testen</p>
+
+## 🙏🏼 Contributors
+
+I want to thank my teachers for the advice, lessons and aid throughout the course:
+| <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/94179710?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Sharon van Opzeeland" height="120"> | <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/2219074?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Melvin Idema" height="120"> | <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/94180118?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Bram Tersteeg" height="120"> | <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/94362031?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Dana Tehubijuluw" height="120"> |
+| :-------------: |:-------------:| :-----:|
+| [Sharon van Opzeeland](https://github.com/sharonvopzeeland) | [Melvin Idema](https://github.com/MelvinIdema) | [Bram Tersteeg](https://github.com/Bram-ter) | [Dana Tehubijuluw](https://github.com/danajamilla)
