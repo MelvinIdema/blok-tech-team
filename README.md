@@ -46,19 +46,25 @@ If you install our application, you need the following:
 
 **Step 1:** Clone this Repository
 
-``` git clone https://github.com/MelvinIdema/blok-tech-team.git ```
+```
+git clone https://github.com/MelvinIdema/blok-tech-team.git 
+```
 
 **Step 2:** Installing packages
 
 Open the file in the terminal and run the code:
 
-```npm install```
+```
+npm install
+```
 
 **Step 3:** Start the server
 
 Run the following code: 
 
-```gulp``` 
+```
+gulp
+``` 
 
 ## Code of Conduct 👮🏽
 In this project we use a Code of Conduct. Make sure to read the whole Code of Conduct <a href="https://github.com/MelvinIdema/blok-tech-team/blob/10-readme/CODE_OF_CONDUCT.md"> here </a>.
