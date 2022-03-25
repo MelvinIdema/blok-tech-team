@@ -25,10 +25,10 @@
 
 <br>
 
-<h2>Concept</h2>
+<h2>Concept 💡</h2>
 <p>Wij gaan een app maken om eenzame ouderen te matchen met een hond uit het asiel om samen ene leuke middag te hebben. Een oudere kan matchen met een Pupple en gaat dan op een playdate! Ze kunnen wandelen, spelen of gezellig samen zijn. Het hangt maar net af hoelang de hond of oudere kan lopen en wat voor karakter deze heeft. Hierbij is ons doel om voor beide partijen een leuke middag te organiseren, als het echt een leuke match is kan de oudere een verzoek tot adoptie sturen naar het asiel.</p>
 
-## 🙏🏼 Contributors
+## Contributors 🙏🏼
 
 | <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/94179710?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Sharon van Opzeeland" height="120"> | <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/2219074?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Melvin Idema" height="120"> | <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/94180118?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Bram Tersteeg" height="120"> | <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/94362031?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Dana Tehubijuluw" height="120"> |  <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/82580596?v=4?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" alt="Martin Schaapherder" height="120">
 | :-------------: |:-------------:| :-----:| :-----:| :-----:|
