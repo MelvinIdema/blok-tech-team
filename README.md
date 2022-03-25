@@ -46,7 +46,7 @@ If you install our application, you need the following:
 
 **Step 1:** Clone this Repository
 
-```git clone https://github.com/MelvinIdema/blok-tech-team.git```
+``` git clone https://github.com/MelvinIdema/blok-tech-team.git ```
 
 **Step 2:** Installing packages
 
