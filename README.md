@@ -25,8 +25,46 @@
 
 <br>
 
-<h2>Concept 💡</h2>
-<p>Wij gaan een app maken om eenzame ouderen te matchen met een hond uit het asiel om samen ene leuke middag te hebben. Een oudere kan matchen met een Pupple en gaat dan op een playdate! Ze kunnen wandelen, spelen of gezellig samen zijn. Het hangt maar net af hoelang de hond of oudere kan lopen en wat voor karakter deze heeft. Hierbij is ons doel om voor beide partijen een leuke middag te organiseren, als het echt een leuke match is kan de oudere een verzoek tot adoptie sturen naar het asiel.</p>
+## Concept 💡
+We are going to make an application for lonely elderly who can have a great day with a shelter animal. The elderly can click between multiple dogs who pop up in their screen. If they think a dog (pupple) is a great match for them, they can invite the dog. On a playdate they can take walks, play with each other or just be together; it depends on the age and character from the dog. Some dogs are young, full with energy and need long walks while other dogs are older with less energy and can't do long walks. Our goal is to give both the eldery and the dog a day full of fun. And the great part is; if they match perfectly, the elderly can adopt the dog from the shelter! 
+
+Already curious? Check our process <a href="https://github.com/MelvinIdema/blok-tech-team/wiki"> here! </a>
+
+## Database Structure 📊
+Our project uses MongoDB as application data platform to store users. We used the following data model:
+
+(komt nog)
+
+## Installation 🛠
+If you install our application, you need the following:
+
+* Node.js
+* Npm
+* Express
+* MongoDB Atlas en MongoDB Compass
+* Ejs
+
+**Step 1:** Clone this Repository
+
+```git clone https://github.com/MelvinIdema/blok-tech-team.git```
+
+**Step 2:** Installing packages
+
+Open the file in the terminal and run the code:
+
+```npm install```
+
+**Step 3:** Start the server
+
+Run the following code: 
+
+```gulp``` 
+
+## Code of Conduct 👮🏽
+In this project we use a Code of Conduct. Make sure to read the whole Code of Conduct <a href="https://github.com/MelvinIdema/blok-tech-team/blob/10-readme/CODE_OF_CONDUCT.md"> here </a>.
+
+## License 📄
+For this project we used ISC License
 
 ## Contributors 🙏🏼
 
