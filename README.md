@@ -25,7 +25,8 @@
 
 <br>
 
-<p align="right">Dit moest ik even testen</p>
+<h2>Concept</h2>
+<p>Wij gaan een app maken om eenzame ouderen te matchen met een hond uit het asiel om samen ene leuke middag te hebben. Een oudere kan matchen met een Pupple en gaat dan op een playdate! Ze kunnen wandelen, spelen of gezellig samen zijn. Het hangt maar net af hoelang de hond of oudere kan lopen en wat voor karakter deze heeft. Hierbij is ons doel om voor beide partijen een leuke middag te organiseren, als het echt een leuke match is kan de oudere een verzoek tot adoptie sturen naar het asiel.</p>
 
 ## 🙏🏼 Contributors
 
