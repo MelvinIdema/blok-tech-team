@@ -3,16 +3,7 @@
   "version": "1.0.0",
   "description": "Team Repository for the AUAS Technical Course hallo - sharon",
   "main": "index.js",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.3",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-nodemon": "^2.2.1",
-    "gulp-uglify": "^3.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
@@ -22,13 +13,11 @@
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5",
-    "nodemon": "^2.0.15",
     "prettier": "2.5.1"
   },
   "scripts": {
-    "dev": "nodemon index.js",
-    "prepare": "husky install",
-    "prestart": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
