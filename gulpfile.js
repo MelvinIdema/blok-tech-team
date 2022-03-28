@@ -34,7 +34,7 @@ gulp.task(
 gulp.task('start', (done) =>
   nodemon({
     script: 'index.js',
-    ext: 'css',
+    ext: 'css, js',
     tasks: ['css'],
     ignore: ['public/dist'],
     done: done,

@@ -1,0 +1,27 @@
+<%- include('includes/head'); -%>
+<%- include('includes/header'); -%>
+
+<section>
+    <header>
+        <h1>Inloggen</h1>
+    </header>
+    <form action="/user/login" method="post">
+        <fieldset>
+            <legend>Login Form</legend>
+            <p id="emailSection">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" required>
+            <p class="error"></p>
+            <p id="passwordSection">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </p>
+            <p class="controls">
+                <button type="submit" id="loginBtn">Log In</button>
+            </p>
+        </fieldset>
+    </form>
+    <footer>
+        <a href="/user/register">Nog geen account?</a>
+    </footer>
+</section>
