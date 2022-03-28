@@ -1,17 +1,17 @@
 async function login(req, res) {
-  if (req.method === 'GET') return res.send('GET LOGIN');
+  if (req.method === 'GET') return res.render('login');
 
   return res.send('NOT IMPLEMENTED: POST LOGIN');
 }
 
 async function register(req, res) {
-  if (req.method === 'GET') return res.send('GET REGISTER');
+  if (req.method === 'GET') return res.render('register');
 
   return res.send('POST REGISTER');
 }
 
 async function account(req, res) {
-  if (req.method === 'GET') return res.send('GET ACCOUNT');
+  if (req.method === 'GET') return res.render('account');
 
   return res.send('POST ACCOUNT');
 }

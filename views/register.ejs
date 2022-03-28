@@ -1,0 +1,40 @@
+<%- include('includes/head'); -%>
+<%- include('includes/header'); -%>
+
+<section>
+    <header>
+        <h1>Registreren</h1>
+    </header>
+    <form action="/user/register" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Account Information</legend>
+            <p class="file-upload">
+                <label for="avatar">
+                    <input type="file" name="avatar" id="avatar" accept="image/jpeg, image/png">
+                </label>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </p>
+            <p>
+                <label for="rpassword">Password</label>
+                <input type="password" name="rpassword" id="rpassword" required>
+            </p>
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </p>
+            <p class="controls">
+                <button type="submit">Sign Up</button>
+            </p>
+        </fieldset>
+    </form>
+    <footer>
+        <a href="/user/login">Heb je al een account?</a>
+    </footer>
+</section>
