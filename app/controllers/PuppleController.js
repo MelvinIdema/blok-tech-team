@@ -1,9 +1,9 @@
 function cards(req, res) {
-  res.render('pupplecards');
+  return res.render('pupplecards');
 }
 
 function info(req, res) {
-  res.render('info');
+  return res.render('info');
 }
 
 module.exports = {

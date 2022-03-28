@@ -1,5 +1,5 @@
 function appointment(req, res) {
-  res.render('appointment');
+  return res.render('appointment');
 }
 
 module.exports = {
