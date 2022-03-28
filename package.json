@@ -17,6 +17,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-nodemon": "^2.5.0",
     "gulp-uglify": "^3.0.2",
+    "mongodb": "^4.4.1",
     "mongoose": "^6.2.8"
   },
   "devDependencies": {
