@@ -42,3 +42,4 @@ gulp.task('start', (done) =>
 );
 
 gulp.task('default', gulp.parallel('css', 'js', 'start', 'watch'));
+gulp.task('build', gulp.parallel('css', 'js'));
