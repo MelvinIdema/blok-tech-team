@@ -62,9 +62,10 @@ li {
 }
 
 body > img:first-of-type {
-  width: 8em;
+  width: 10em;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5em;
 }
