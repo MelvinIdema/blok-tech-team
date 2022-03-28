@@ -14,15 +14,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 const oneDay = 1000 * 60 * 60 * 24;
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  store: MongoStore.create({
-    mongoUrl: process.env.MONGODB_URL,
-  }),
-  saveUninitialized: true,
-  cookie: { maxAge: oneDay },
-  resave: false,
-}));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    store: MongoStore.create({
+      mongoUrl: process.env.DB_URI,
+    }),
+    saveUninitialized: true,
+    cookie: { maxAge: oneDay },
+    resave: false,
+  })
+);
 
 app.use('/user', UserRouter);
 app.use('/', AppRouter);

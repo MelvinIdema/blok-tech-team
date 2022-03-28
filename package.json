@@ -4,6 +4,7 @@
   "description": "Team Repository for the AUAS Technical Course hallo - sharon",
   "main": "index.js",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.0",
@@ -15,7 +16,8 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-nodemon": "^2.5.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "mongoose": "^6.2.8"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
