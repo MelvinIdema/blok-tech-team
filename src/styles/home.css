@@ -12,8 +12,7 @@
   width: 10em;
   height: 2em;
   border-radius: 100%;
-  margin: 0 auto;
-  margin-top: -3.5em;
+  margin: -3.5em auto 0;
 }
 
 .start {
@@ -31,6 +30,5 @@
   border-radius: 0.5em;
   width: 8em;
   height: 2.1em;
-  margin: 0 auto;
-  margin-top: 3.5em;
+  margin: 3.5em auto 0;
 }
