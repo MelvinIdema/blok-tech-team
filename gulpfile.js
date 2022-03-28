@@ -8,7 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 gulp.task('css', async () => {
   gulp
     .src('./src/styles/*.css')
-    .pipe(autoprefixer())
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
     .pipe(concat('style.min.css'))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('public/dist'));
