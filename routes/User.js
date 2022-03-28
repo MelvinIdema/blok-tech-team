@@ -15,4 +15,7 @@ UserRouter.post('/register', UserController.register);
 UserRouter.get('/account', UserController.account);
 UserRouter.post('/account', UserController.account);
 
+// Logout
+UserRouter.get('/logout', UserController.logout);
+
 module.exports = UserRouter;

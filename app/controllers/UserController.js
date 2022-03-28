@@ -58,8 +58,14 @@ async function account(req, res) {
   return res.json(user);
 }
 
+async function logout(req, res) {
+  req.session.destroy();
+  res.redirect('/user/login');
+}
+
 module.exports = {
   login,
   register,
   account,
+  logout,
 };
