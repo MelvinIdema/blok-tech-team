@@ -13,6 +13,7 @@
   --green-color: #85a58a;
   --black-color: #000000;
   --pupple-shadow-color: #9f4c00;
+  --dark-orange-color: #cc6100;
 }
 
 body {
@@ -60,6 +61,10 @@ li {
   padding-top: 1.5em;
 }
 
-.test {
-  background: red;
+body > img:first-of-type {
+  width: 8em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
