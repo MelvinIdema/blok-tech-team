@@ -5,14 +5,14 @@ const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('css', () =>
+gulp.task('css', async () => {
   gulp
     .src('./src/styles/*.css')
     .pipe(autoprefixer())
     .pipe(concat('style.min.css'))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(gulp.dest('public/dist'))
-);
+    .pipe(gulp.dest('public/dist'));
+});
 
 gulp.task('js', async () => {
   gulp
