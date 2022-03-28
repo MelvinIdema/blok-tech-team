@@ -3,6 +3,7 @@ const UserRouter = require('./routes/User.js');
 const AppRouter = require('./routes/App.js');
 const app = express();
 
+app.use(express.static('public'));
 app.use('/user', UserRouter);
 app.use('/', AppRouter);
 

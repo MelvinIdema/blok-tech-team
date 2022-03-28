@@ -38,3 +38,7 @@ label {
   font-weight: 400;
   color: var(--black-color);
 }
+
+.test {
+  background: red;
+}
