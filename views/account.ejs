@@ -4,17 +4,21 @@
 <h1>Mijn account</h1>
 <p>Hier staan al jouw gegevens</p>
 
-<section>
+<section class="account-info">
     <!-- dit moet aangepast kunnen worden -->
-    <img src="/images/annie.jpeg" alt="Profielfoto">
-    <h2>Annie</h2> 
+    <div class="profile-pic-container">
+        <img src="/images/annie.jpeg" alt="Profielfoto">
+        <h2>Annie</h2> 
+    </div>
 
-    <h3>Gebruikersnaam</h3>
-    <p>annie.thijssen1</p>
+    <div class="information-container">
+        <h3>Gebruikersnaam</h3>
+        <p>annie.thijssen1</p>
 
-    <h3>Telefoonnummer</h3>
-    <p>06 32857742</p>
+        <h3>Telefoonnummer</h3>
+        <p>06 32857742</p>
 
-    <a href="#">Wachtwoord wijzigen</a>
+        <a href="#">Wachtwoord wijzigen</a>
+    </div>
 </section>
 <%- include('includes/footer'); -%>
