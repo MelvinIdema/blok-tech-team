@@ -1,0 +1,43 @@
+.buttons {
+  display: flex;
+  gap: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.decline {
+  background-color: var(--grey-color);
+  color: var(--green-color);
+  font-family: ubuntu, sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: 3em;
+  height: 2.1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.next {
+  background-color: var(--grey-color);
+  color: var(--green-color);
+  font-family: ubuntu, sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+
+  display: block;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: 8em;
+  height: 2.1em;
+  margin: 0 auto;
+  margin-top: 2em;
+}
