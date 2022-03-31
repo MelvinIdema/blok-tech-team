@@ -14,21 +14,3 @@
   border-radius: 100%;
   margin: -3.5em auto 0;
 }
-
-.start {
-  background-color: var(--grey-color);
-  color: var(--green-color);
-  font-family: ubuntu, sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  text-decoration: none;
-  border: none;
-  text-align: center;
-
-  display: block;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  width: 8em;
-  height: 2.1em;
-  margin: 3.5em auto 0;
-}
