@@ -54,8 +54,8 @@ function register2(req, res) {
   return res.render('register2');
 }
 
-function registeroverzicht(req, res) {
-  return res.render('registeroverzicht');
+function registeroverview(req, res) {
+  return res.render('registeroverview');
 }
 
 async function account(req, res) {
@@ -79,7 +79,7 @@ module.exports = {
   register,
   register1,
   register2,
-  registeroverzicht,
+  registeroverview,
   account,
   logout,
 };

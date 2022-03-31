@@ -20,8 +20,8 @@ UserRouter.get('/register2', UserController.register2);
 UserRouter.post('/register2', UserController.register2);
 
 // Registeroverzicht Page
-UserRouter.get('/registeroverzicht', UserController.registeroverzicht);
-UserRouter.post('/registeroverzicht', UserController.registeroverzicht);
+UserRouter.get('/registeroverview', UserController.registeroverview);
+UserRouter.post('/registeroverview', UserController.registeroverview);
 
 // Account Page
 UserRouter.get('/account', UserController.account);
