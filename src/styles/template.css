@@ -80,6 +80,14 @@ li {
   padding-top: 1.5em;
 }
 
+a {
+  font-family: josefin-sans, sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+
+  color: var(--grey-color);
+}
+
 .logo {
   width: 10em;
   height: auto;
