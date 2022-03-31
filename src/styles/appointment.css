@@ -1,8 +1,0 @@
-.match-shadow {
-  background-color: var(--pupple-shadow-color);
-  width: 10em;
-  height: 2em;
-  border-radius: 100%;
-  margin: 0 auto;
-  margin-top: -3em;
-}

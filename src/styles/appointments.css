@@ -1,0 +1,84 @@
+.card {
+  background-color: var(--grey-color);
+  border-radius: 2em;
+  width: 100vw;
+  height: 30em;
+
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 5px 20px var(--dark-orange-color);
+  z-index: 0;
+}
+
+.buddy {
+  display: flex;
+  margin-top: 8.5em;
+  margin-left: 1em;
+}
+
+.benno {
+  display: flex;
+  margin-top: 3em;
+  margin-left: 1em;
+}
+
+.buddy img,
+.benno img {
+  width: 7em;
+  height: 7em;
+  border-radius: 100%;
+
+  object-fit: cover;
+  z-index: 100;
+}
+
+.appointment1,
+.appointment2 {
+  background-color: var(--dark-grey-color);
+  font-family: josefin-sans, sans-serif;
+  font-size: 1em;
+
+  display: inline-block;
+  padding: 1.3em;
+  margin-left: 1em;
+  width: 14.2em;
+  border-radius: 2em;
+  z-index: 100;
+}
+
+.appointment1 p:first-of-type,
+.appointment2 p:first-of-type {
+  font-weight: 600;
+}
+
+.appointment1 p,
+.appointment2 p {
+  color: var(--black-color);
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: flex;
+  margin: 0 auto;
+}
+
+.nieuwe-puppledate {
+  background-color: var(--green-color);
+  color: var(--grey-color);
+  font-family: ubuntu, sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: none;
+
+  border-radius: 0.5em;
+  width: 11em;
+  height: 2.1em;
+  position: absolute;
+  margin-top: 1.4em;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: 0;
+}
