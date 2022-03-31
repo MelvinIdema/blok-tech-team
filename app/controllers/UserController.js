@@ -6,7 +6,6 @@ async function login(req, res) {
 
   const user = {
     email: req.body.email,
-    name: req.body.name,
     password: req.body.password,
   };
   // TODO: User Schema
@@ -47,6 +46,18 @@ async function register(req, res) {
   return res.redirect('/');
 }
 
+function register1(req, res) {
+  return res.render('register1');
+}
+
+function register2(req, res) {
+  return res.render('register2');
+}
+
+function registeroverzicht(req, res) {
+  return res.render('registeroverzicht');
+}
+
 async function account(req, res) {
   const dbUser = await User.findOne({ email: req.session.user.email }).exec();
 
@@ -66,6 +77,9 @@ async function logout(req, res) {
 module.exports = {
   login,
   register,
+  register1,
+  register2,
+  registeroverzicht,
   account,
   logout,
 };

@@ -1,7 +1,7 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
 
-<section>
+<!-- <section>
     <header>
         <h1>Inloggen</h1>
     </header>
@@ -24,6 +24,31 @@
     <footer>
         <a href="/user/register">Nog geen account?</a>
     </footer>
-</section>
+</section> -->
+
+<h1 class="stapheader">Inloggen</h1>
+
+<p class="pelementinlog">Nog geen account? Registreer <a href="/user/register">hier</a> </p>
+
+<div class="inlogscherm4">
+    
+    <a href="/">
+        <img class="terug" src="/images/arrowback.png" alt="terugpijl">
+    </a>
+
+    <form action="/user/login" method="post">
+
+    <label class="pinform" for="email">Email</label>
+    <input class="inputregistreren" type="email" name="email" id="email" value="" required>
+
+    <label class="pinform" for="password">Wachtwoord</label>
+    <input class="inputregistreren" type="password" name="password" id="password" required>
+
+    <div class="centerbuttondiv">
+    <button class="volgende">Inloggen</button>
+    </div>
+
+    </form>
+</div>
 
 <%- include('includes/footer'); -%>

@@ -1,0 +1,29 @@
+<%- include('includes/head'); -%>
+<%- include('includes/header'); -%>
+
+<img src="/images/progressionbar3.png" class="progressionbar" alt="progressionbar">
+
+<h1 class="stapheader">Stap 3</h1>
+
+<p class="pelementinlog">Vul jouw gebruikersnaam in</p>
+
+<div class="inlogscherm2">
+    <a href="/user/register1">
+        <img class="terug" src="/images/arrowback.png" alt="terugpijl">
+    </a>
+    <form action="/user/registeroverzicht">
+
+    <p class="pinform">Gebruikersnaam</p>
+    <input class="inputregistreren" type="text">
+
+    <p class="pinform">Wachtwoord</p>
+    <input class="inputregistreren" type="password">
+
+    <div class="centerbuttondiv">
+    <button class="volgende">Volgende</button>
+    </div>
+
+    </form>
+</div>
+
+<%- include('includes/footer'); -%>
