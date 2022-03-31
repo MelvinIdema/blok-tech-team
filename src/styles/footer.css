@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--grey-color);
+  background-color: var(--white-color);
   position: sticky;
   transform: translate3d(0, 0, 0);
   left: 0;
@@ -36,6 +36,6 @@
 
 .navbar a:hover {
   color: var(--green-color);
-  background-color: var(--white-color);
+  background-color: var(--dark-grey-color);
   border-radius: 0.5em;
 }
