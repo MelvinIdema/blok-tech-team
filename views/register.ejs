@@ -1,7 +1,8 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
 
-<section>
+<!-- <section>
+
     <header>
         <h1>Registreren</h1>
     </header>
@@ -37,6 +38,34 @@
     <footer>
         <a href="/user/login">Heb je al een account?</a>
     </footer>
-</section>
+</section> -->
+
+<img src="/images/progressionbar1.png" class="progressionbar" alt="progressionbar">
+
+<h1 class="stapheader">Stap 1</h1>
+
+<p class="pelementinlog">Upload een profielfoto en vul je naam in</p>
+
+<div class="inlogscherm">
+    <a href="/user/login">
+        <img class="terug" src="/images/arrowback.png" alt="terugpijl">
+    </a>
+    <form action="/user/register1">
+    <p class="file-upload">
+        <label for="avatar" id="labelavatar">
+            <input type="file" name="avatar" id="avatar" accept="image/jpeg, image/png">
+         </label>
+    </p>
+    <p class="pinform">Naam</p>
+    <input class="inputregistreren" type="text">
+    <p class="pinform">Telefoonnummer</p>
+    <input class="inputregistreren" type="tel">
+    
+
+    <div class="centerbuttondiv">
+    <button class="volgende">Volgende</button>
+    </div>
+    </form>
+</div>
 
 

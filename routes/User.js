@@ -11,6 +11,18 @@ UserRouter.post('/login', UserController.login);
 UserRouter.get('/register', UserController.register);
 UserRouter.post('/register', UserController.register);
 
+// Register1 Page
+UserRouter.get('/register1', UserController.register1);
+UserRouter.post('/register1', UserController.register1);
+
+// Register2 Page
+UserRouter.get('/register2', UserController.register2);
+UserRouter.post('/register2', UserController.register2);
+
+// Registeroverzicht Page
+UserRouter.get('/registeroverzicht', UserController.registeroverzicht);
+UserRouter.post('/registeroverzicht', UserController.registeroverzicht);
+
 // Account Page
 UserRouter.get('/account', UserController.account);
 UserRouter.post('/account', UserController.account);
