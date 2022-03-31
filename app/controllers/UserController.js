@@ -20,7 +20,7 @@ async function login(req, res) {
     email: dbUser.email,
   };
 
-  return res.redirect('/');
+  return res.redirect('/pupple');
 }
 
 async function register(req, res) {
