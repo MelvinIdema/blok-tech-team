@@ -48,14 +48,14 @@ async function register(req, res) {
 }
 
 async function account(req, res) {
-  const dbUser = await User.findOne({ email: req.session.user.email }).exec();
+  // const dbUser = await User.findOne({ email: req.session.user.email }).exec();
 
-  const user = {
-    name: dbUser.name,
-    email: dbUser.email,
-  };
+  // const user = {
+  //   name: dbUser.name,
+  //   email: dbUser.email,
+  // };
 
-  return res.json(user);
+  return res.render('account');
 }
 
 async function logout(req, res) {
