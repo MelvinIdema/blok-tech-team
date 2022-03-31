@@ -1,7 +1,7 @@
 .cards {
   background-color: var(--grey-color);
   border-radius: 2em;
-  margin: 7em 2em 0 1em;
+  margin: 4em 2em 0 1em;
   width: 90%;
   box-shadow: 0 5px 20px var(--dark-orange-color);
 }
