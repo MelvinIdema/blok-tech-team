@@ -36,6 +36,6 @@
 
 .navbar a:hover {
   color: var(--green-color);
-  background-color: var(--dark-grey-color);
+  background-color: var(--white-color);
   border-radius: 0.5em;
 }
