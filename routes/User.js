@@ -1,4 +1,5 @@
 const express = require('express');
+const upload = require('../app/services/S3.js');
 const UserController = require('./../app/controllers/UserController.js');
 
 const UserRouter = express.Router();
@@ -9,7 +10,7 @@ UserRouter.post('/login', UserController.login);
 
 // Register Page
 UserRouter.get('/register', UserController.register);
-UserRouter.post('/register', UserController.register);
+UserRouter.post('/register', upload.array('avatar'), UserController.register);
 
 // Register1 Page
 UserRouter.get('/register1', UserController.register1);
@@ -25,7 +26,7 @@ UserRouter.post('/registeroverview', UserController.registeroverview);
 
 // Account Page
 UserRouter.get('/account', UserController.account);
-UserRouter.post('/account', UserController.account);
+UserRouter.post('/account', upload.array('avatar'), UserController.account);
 
 // Logout
 UserRouter.get('/logout', UserController.logout);

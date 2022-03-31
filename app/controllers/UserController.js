@@ -8,7 +8,7 @@ async function login(req, res) {
     email: req.body.email,
     password: req.body.password,
   };
-  // TODO: User Schema
+
   const dbUser = await User.findOne({ email: user.email });
 
   if (!dbUser || !bcrypt.compareSync(user.password, dbUser.password)) {
@@ -25,28 +25,40 @@ async function login(req, res) {
 async function register(req, res) {
   if (req.method === 'GET') return res.render('register');
 
-  console.log(req.body);
   const user = {
     email: req.body.email,
     name: req.body.name,
+    avatar: req.body.files[0].location,
   };
 
-  const salt = await bcrypt.genSalt(10);
-  user.password = await bcrypt.hash(req.body.password, salt);
+  console.log(user);
 
-  const dbUser = new User(user);
-  dbUser.save();
+  // const salt = await bcrypt.genSalt(10);
+  // user.password = await bcrypt.hash(req.body.password, salt);
+  //
+  // const dbUser = new User(user);
+  // dbUser.save();
 
-  req.session.user = {
-    id: dbUser._id,
-    email: dbUser.email,
-    name: dbUser.name,
-  };
+  // req.session.user = {
+  //   id: dbUser._id,
+  //   email: dbUser.email,
+  //   name: dbUser.name,
+  // };
 
   return res.redirect('/');
 }
 
 function register1(req, res) {
+  if (req.method === 'GET') return res.render('register1');
+
+  const user = {
+    email: req.body.email,
+    name: req.body.name,
+    avatar: req.body.files[0].location,
+  };
+
+  console.log(user);
+
   return res.render('register1');
 }
 
