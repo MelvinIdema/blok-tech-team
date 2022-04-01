@@ -6,7 +6,7 @@ const puppleSchema = new mongoose.Schema({
   imgUrl: String,
   name: String,
   location: { lat: String, lon: String },
-  locationName: String,
+  city: String,
   age: Number,
   personality: String,
   walkDuration: Number,
