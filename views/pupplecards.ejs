@@ -4,22 +4,24 @@
 
     <%- include('includes/header'); -%>
     <div class="cards">
-        <img src="/images/hond.jpeg" alt="Puppy">
+        <img src="/images/<%= pupple.imgUrl %>" alt="Puppy">
         <div class="container">
-            <h1>Buddy</h1>
-            <p>DOA Amsterdam</p>
+            <h1><%= pupple.name %></h1>
+            <p><%= pupple.location %></p>
 
             <ul>
-                <li>1 jaar</li>
-                <li>Speels Karakter</li>
-                <li>2 uur</li>
+                <li><%= pupple.age %> jaar</li>
+                <li><%= pupple.personality %></li>
+                <li><%= pupple.walkDuration %> uur</li>
             </ul>
         </div>
     </div>
 
     <div class="buttons">
-        <a href="#" class="decline">X</a>
-        <a href="#" class="next">Uitnodigen</a>
+        <a href="/pupple" class="decline">X</a>
+
+        <a href="/pupple/info/<%= pupple._id %>" class="next">Maak afspraak</a>
+
     </div>
     
     

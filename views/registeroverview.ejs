@@ -1,0 +1,34 @@
+<%- include('includes/head'); -%>
+<%- include('includes/header'); -%>
+
+<main class='full-vertical'>
+    <header>
+        <img src="/images/progressionbareind.png" class="progressionbar" alt="progressionbar">
+        <h1 class="stapheader">Overzicht</h1>
+        <p class="pelementinlog">Hier zie je een overzicht van alle ingevulde informatie</p>
+    </header>
+
+    <section class='content-container'>
+        <h3 class="dikgedruktoverzicht">Naam</h3>
+        <p class="pinform1"><%= register.name %></p>
+
+        <h3 class="dikgedruktoverzicht">Telefoonnummer</h3>
+        <p class="pinform1"><%= register.phone %></p>
+
+        <h3 class="dikgedruktoverzicht">Leeftijd</h3>
+        <p class="pinform1"><%= register.age %> Jaar</p>
+
+        <h3 class="dikgedruktoverzicht">Mobiliteit</h3>
+        <p class="pinform1"><%= register.mobility %></p>
+
+        <h3 class="dikgedruktoverzicht">Gebruikersnaam</h3>
+        <p class="pinform1"><%= register.username %></p>
+
+        <h3 class="dikgedruktoverzicht">Wachtwoord</h3>
+        <p class="pinform1"><%= register.password %></p>
+
+        <form action="/user/register/5" method="post">
+            <button class="volgende">registreer</button>
+        </form>
+    </section>
+</main>

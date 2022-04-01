@@ -1,0 +1,45 @@
+<%- include('includes/head'); -%>
+<%- include('includes/header'); -%>
+
+<main class='full-vertical'>
+    <header>
+        <img src="/images/progressionbar2.png" class="progressionbar" alt="progressionbar">
+        <h1 class="stapheader">Stap 2</h1>
+        <p class="pelementinlog">Vul jouw leeftijd en mobiliteit in</p>
+    </header>
+
+    <section class="content-container">
+        <a href="/user/login">
+            <img class="back-button" src="/images/arrowback.png" alt="terugpijl">
+        </a>
+
+        <form action="/user/register/3" method="post" class="vertical-form">
+            <div class='form-group'>
+                <label class="content-container_label">Leeftijd</label>
+                <input class="inputregistreren" type="text" name="age">
+            </div>
+
+            <div class='form-group'>
+                <label class="content-container_label">Mobiliteit</label>
+                <div class="mobiliteitbuttons">
+                    <input type="radio" id="disability" name="mobility" value="disability">
+                    <label for="disability" class="mobiliteit1">
+                        <img class="mobiliteitimage" src="/images/disability.png" alt="">
+                    </label>
+
+                    <input type="radio" id="walker" name="mobility" value="walker">
+                    <label for="walker" class="mobiliteit2">
+                        <img class="mobiliteitimage" src="/images/walker.png" alt="">
+                    </label>
+
+                    <input type="radio" id="nothing" name="mobility" value="nothing">
+                    <label for="nothing" class="mobiliteit3">
+                        <img class="mobiliteitimage" src="/images/niks.png" alt="">
+                    </label>
+                </div>
+            </div>
+
+            <button class="volgende">Volgende</button>
+        </form>
+    </section>
+</main>

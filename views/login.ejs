@@ -1,29 +1,24 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
-
-<section>
+<main class='full-vertical'>
     <header>
-        <h1>Inloggen</h1>
+        <h1 class="stapheader">Inloggen</h1>
+        <p class="pelementinlog">Nog geen account? <a href="/user/register">Registreer hier</a> </p>
     </header>
-    <form action="/user/login" method="post">
-        <fieldset>
-            <legend>Login Form</legend>
-            <p id="emailSection">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="" required>
-            <p class="error"></p>
-            <p id="passwordSection">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-            </p>
-            <p class="controls">
-                <button type="submit" id="loginBtn">Log In</button>
-            </p>
-        </fieldset>
-    </form>
-    <footer>
-        <a href="/user/register">Nog geen account?</a>
-    </footer>
-</section>
+    <section class='content-container'>
+        <form class="vertical-form login" action="/user/login" method="post">
+            <div class='form-group'>
+                <label class="content-container_label" for="username">Gebruikersnaam</label>
+                <input class="inputregistreren" type="text" name="username" id="username" value="" required>
+            </div>
 
-<%- include('includes/footer'); -%>
+            <div class='form-group'>
+                <label class="content-container_label" for="password">Wachtwoord</label>
+                <input class="inputregistreren" type="password" name="password" id="password" required>
+            </div>
+
+            <button class="volgende">Inloggen</button>
+        </form>
+    </section>
+</main>
+

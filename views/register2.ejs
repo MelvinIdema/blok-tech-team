@@ -1,0 +1,32 @@
+<%- include('includes/head'); -%>
+<%- include('includes/header'); -%>
+
+<main class="full-vertical">
+    <header>
+        <img src="/images/progressionbar3.png" class="progressionbar" alt="progressionbar">
+        <h1 class="stapheader">Stap 3</h1>
+        <p class="pelementinlog">Vul jouw gebruikersnaam in</p>
+    </header>
+
+    <section class="content-container">
+        <a href="/user/login">
+            <img class="back-button" src="/images/arrowback.png" alt="terugpijl">
+        </a>
+
+        <form class="vertical-form" action="/user/register/4" method="post">
+            <div class='form-group'>
+                <label class="content-container_label" for="username">Gebruikersnaam</label>
+                <input class="inputregistreren" type="text" name="username">
+            </div>
+
+            <div class='form-group'>
+                <label class="content-container_label" for="password">Wachtwoord</label>
+                <input class="inputregistreren" type="password" name="password">
+            </div>
+
+            <button class="volgende">Volgende</button>
+        </form>
+    </section>
+
+</main>
+

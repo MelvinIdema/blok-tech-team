@@ -2,7 +2,7 @@
   background-color: var(--grey-color);
   border-radius: 2em;
   width: 100vw;
-  height: 30em;
+  height: 35em;
 
   position: fixed;
   bottom: 0;
@@ -12,7 +12,7 @@
 
 .buddy {
   display: flex;
-  margin-top: 8.5em;
+  margin-top: 2.5em;
   margin-left: 1em;
 }
 
@@ -76,7 +76,7 @@ a {
   width: 11em;
   height: 2.1em;
   position: absolute;
-  margin-top: 1.4em;
+  margin-top: 3.4em;
   justify-content: center;
   align-items: center;
   right: 0;

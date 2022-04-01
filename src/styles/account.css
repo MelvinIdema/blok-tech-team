@@ -1,9 +1,13 @@
 .account-info {
   background-color: var(--grey-color);
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-  margin-top: 2em;
-  height: 59%;
+  border-radius: 2em;
+  width: 100%;
+  height: 35em;
+
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 5px 20px var(--dark-orange-color);
+  z-index: 0;
 }
 
 .account-info h2,

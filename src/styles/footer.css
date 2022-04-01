@@ -34,8 +34,15 @@
   color: var(--green-color);
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.active,
+.active i {
   color: var(--green-color);
   background-color: var(--dark-grey-color);
   border-radius: 0.5em;
+}
+
+.navbar a:active {
+  background: none;
+  color: none;
 }
