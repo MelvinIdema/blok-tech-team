@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
   mobility: String,
   username: String,
   password: String,
+  appointments: Object,
 });
 
 module.exports = mongoose.model('User', userSchema);

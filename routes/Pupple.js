@@ -5,6 +5,6 @@ const PuppleRouter = express.Router();
 
 PuppleRouter.use(authenticated);
 PuppleRouter.get('/', PuppleController.cards);
-PuppleRouter.get('/info', PuppleController.info);
+PuppleRouter.get('/info/:id', PuppleController.info);
 
 module.exports = PuppleRouter;
