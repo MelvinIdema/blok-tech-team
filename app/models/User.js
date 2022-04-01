@@ -4,7 +4,10 @@ mongoose.connect(process.env.DB_URI);
 
 const userSchema = new mongoose.Schema({
   name: String,
-  email: String,
+  phone: String,
+  age: Number,
+  mobility: String,
+  username: String,
   password: String,
 });
 

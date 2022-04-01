@@ -10,23 +10,25 @@
 
     <section class='content-container'>
         <h3 class="dikgedruktoverzicht">Naam</h3>
-        <p class="pinform1">Annie Thijssen</p>
+        <p class="pinform1"><%= register.name %></p>
 
         <h3 class="dikgedruktoverzicht">Telefoonnummer</h3>
-        <p class="pinform1">06-24650392</p>
+        <p class="pinform1"><%= register.phone %></p>
 
         <h3 class="dikgedruktoverzicht">Leeftijd</h3>
-        <p class="pinform1">72 Jaar</p>
+        <p class="pinform1"><%= register.age %> Jaar</p>
 
         <h3 class="dikgedruktoverzicht">Mobiliteit</h3>
-        <p class="pinform1">Niks</p>
+        <p class="pinform1"><%= register.mobility %></p>
 
         <h3 class="dikgedruktoverzicht">Gebruikersnaam</h3>
-        <p class="pinform1">annie.thijssen1</p>
+        <p class="pinform1"><%= register.username %></p>
 
         <h3 class="dikgedruktoverzicht">Wachtwoord</h3>
-        <p class="pinform1">[REDACTED]</p>
+        <p class="pinform1"><%= register.password %></p>
 
-        <button class="volgende">registreer</button>
+        <form action="/user/register/5" method="post">
+            <button class="volgende">registreer</button>
+        </form>
     </section>
 </main>
