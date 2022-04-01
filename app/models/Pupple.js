@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-const { Schema } = mongoose;
 
 mongoose.connect(process.env.DB_URI);
 
-const puppleSchema = new Schema({
+const puppleSchema = new mongoose.Schema({
   imgUrl: String,
   name: String,
   location: { lat: String, lon: String },
