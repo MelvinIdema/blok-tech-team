@@ -57,7 +57,7 @@
 }
 
 .date-buttons input[type='radio']:checked + label {
-  border: 4px solid var(--green-color);
+  box-shadow: inset 0 0 0 4px var(--green-color);
 }
 
 .info-card .buttons .decline {

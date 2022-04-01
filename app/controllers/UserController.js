@@ -100,7 +100,7 @@ async function register(req, res) {
       username: dbUser.username,
       name: dbUser.name,
     };
-    return res.redirect('/pupples');
+    return res.redirect('/pupple');
   }
 
   return res.redirect('/user/register');
