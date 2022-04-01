@@ -1,157 +1,65 @@
-.achtergrond {
-  background-color: white;
-  margin-top: -1em;
-  padding-top: 1em;
-  text-align: center;
-}
-
 .fotobuddy {
   margin-top: 6em;
   max-width: 100%;
-  border-radius: 5em 5em 0em 0em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
-.title {
-  color: black;
-  font-family: ubuntu, sans-serif;
-  margin: 0;
-  padding-left: 0.3em;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
-  text-align: left;
+.info-card {
+  background-color: var(--grey-color);
+}
+.info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
 }
 
-h3 {
-  font-family: josefin-sans, sans-serif;
-  font-weight: lighter;
-  color: black;
+.info-text h1,
+.info-container h3,
+.info-text p {
+  color: var(--black-color);
+  padding: 0;
 }
 
-.pelementinfo {
-  font-family: josefin-sans, sans-serif;
-  color: black;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
-  max-width: 95%;
-  line-height: 120%;
+.info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  padding: 20px;
+  color: var(--black-color);
 }
 
-.kalendericoon {
+.info-container .fa {
   max-width: 12%;
-  float: left;
 }
 
-.dagkiezen {
-  float: right;
-  color: black;
-  font-weight: lighter;
+.date-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
-.floatdiv {
-  padding-top: 1em;
-  max-width: 33%;
-  padding-left: 0.5em;
-}
-
-.dagkiezenbuttons {
-  clear: both;
-}
-
-.dagkiezenbuttons input[type='radio'] {
-  opacity: 0;
+.date-buttons input[type='radio'] {
   position: fixed;
   width: 0;
 }
 
-.dagkiezenbuttons label {
-  display: inline-block;
-  background-color: lightgray;
+.date-buttons label {
+  background-color: var(--dark-grey-color);
   padding: 10px 18px;
-  margin: 0.5em;
-  font-family: ubuntu, sans-serif;
-  font-size: 16px;
+  margin: 0.1em;
   border-radius: 4px;
-  min-width: 5em;
-  font-family: josefin-sans, sans-serif;
+  width: 6.8em;
+  text-align: center;
 }
 
-.label1 {
-  width: 7em;
-}
-
-.dagkiezenbuttons input[type='radio']:checked + label {
+.date-buttons input[type='radio']:checked + label {
   border: 4px solid var(--green-color);
 }
 
-.klokicoon {
-  max-width: 12%;
-  padding-top: 3px;
-  float: left;
-}
-
-.locatieicoon {
-  max-width: 12%;
-  float: left;
-}
-
-.kruisjebutton {
-  padding-top: 1em;
-  max-width: 10%;
-}
-
-.bevestigen {
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  background-color: rgb(58, 92, 36);
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 5em;
-}
-
-.buttons {
-  display: flex;
-  gap: 0;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.decline1 {
-  background-color: var(--grey-color);
-  color: var(--green-color);
-  font-family: ubuntu, sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  text-decoration: none;
-  border: none;
-  text-align: center;
-
-  padding: 0.5em;
-  border-radius: 0.5em;
-  width: 3em;
-  height: 2.1em;
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-.bevestig1 {
-  background-color: var(--green-color);
-  color: white;
-  font-family: ubuntu, sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-  text-decoration: none;
-  border: none;
-  text-align: center;
-
-  padding: 0.5em;
-  border-radius: 0.5em;
-  width: 8em;
-  height: 2.1em;
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 1em;
+.info-card .buttons .decline {
+  background-color: var(--dark-grey-color);
 }

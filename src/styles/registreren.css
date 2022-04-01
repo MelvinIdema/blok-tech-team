@@ -153,6 +153,7 @@ input[type='file'] {
   width: 8em;
   height: 2.1em;
   margin: auto auto 0;
+  margin-bottom: 1em;
 }
 
 .dikgedruktoverzicht {
