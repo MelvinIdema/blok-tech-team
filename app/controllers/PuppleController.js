@@ -9,8 +9,13 @@ async function cards(req, res) {
   });
 }
 
-function info(req, res) {
-  return res.render('info');
+async function info(req, res) {
+  const id = req.params.id;
+  const pupple = await Pupple.findOne({ _id: id });
+
+  return res.render('info', {
+    pupple: pupple,
+  });
 }
 
 module.exports = {

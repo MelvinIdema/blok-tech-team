@@ -4,12 +4,12 @@
     <%- include('includes/head'); -%>
 
     <%- include('includes/header'); -%>
-    <img src="/images/buddy.jpg" class="fotobuddy" alt="Foto buddy">
+    <img src="/images/<%= pupple.imgUrl %>" class="fotobuddy" alt="Foto buddy">
     <section class="info-card">
 
         <div class="info-text">
-            <h1>Buddy</h1>
-            <p>Buddy is een speelse pup van net 1 jaar oud. In het asiel is Buddy echt een mensenhond, hij zoekt de medewerkers altijd op. Daarom is Buddy een perfecte hond voor iemand die een lekkere lange wandeltocht wilt lopen en een balletje kan gooien. Iets voor jou? Spreek een dag en tijd af!</p>
+            <h1><%= pupple.name %></h1>
+            <p><%= pupple.description%></p>
         </div>
 
         <div class="info-container">
@@ -82,7 +82,7 @@
 
         <div class="info-container">
             <i class="fa fa-map-marker fa-2x"></i>
-            <h3>Vind Buddy</h3>
+            <h3>Vind <%= pupple.name%></h3>
         </div>
 
         <div class="buttons">
