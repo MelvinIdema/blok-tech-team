@@ -2,7 +2,9 @@
   display: flex;
   gap: 0;
   width: 80%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
 }
 
 .decline {
@@ -21,6 +23,7 @@
   height: 2.1em;
   margin: 0 auto;
   margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .next {
