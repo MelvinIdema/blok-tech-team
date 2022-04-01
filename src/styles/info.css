@@ -1,8 +1,3 @@
-#map {
-  height: 20em;
-  width: 100%;
-}
-
 .fotobuddy {
   margin-top: 6em;
   max-width: 100%;
@@ -46,9 +41,14 @@
   color: var(--black-color);
 }
 
-.map-container .fa,
 .map-container h3 {
   align-self: center;
+}
+
+.map-container #map {
+  height: 25em;
+  width: 100%;
+  border-radius: 1em;
 }
 
 .info-container .fa {
@@ -76,7 +76,7 @@
   text-align: center;
 }
 
-.date-buttons input[type='radio']:checked+label {
+.date-buttons input[type='radio']:checked + label {
   border: 4px solid var(--green-color);
 }
 
