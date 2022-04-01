@@ -5,18 +5,19 @@ async function login(req, res) {
   if (req.method === 'GET') return res.render('login');
 
   const user = {
-    email: req.body.email,
+    username: req.body.username,
     password: req.body.password,
   };
 
-  const dbUser = await User.findOne({ email: user.email });
+  const dbUser = await User.findOne({ username: user.username });
 
   if (!dbUser || !bcrypt.compareSync(user.password, dbUser.password)) {
     return res.render('login');
   }
 
   req.session.user = {
-    email: dbUser.email,
+    id: dbUser._id,
+    username: dbUser.username,
   };
 
   return res.redirect('/pupple');
@@ -27,8 +28,9 @@ async function register(req, res) {
    * --Step One--
    * Just shows the register form.
    */
-  if ((req.method === 'GET' && req.params.step === '1') || !req.params.step)
+  if ((req.method === 'GET' && req.params.step === '1') || !req.params.step) {
     return res.render('register');
+  }
 
   /**
    * --Step Two--
@@ -36,44 +38,79 @@ async function register(req, res) {
    * in a Session Cookie.
    */
   if (req.method === 'GET' && req.params.step === '2')
+    return res.redirect('/user/register');
+  if (req.method === 'POST' && req.params.step === '2') {
+    const avatar = req.files
+      ? req.files[0].location
+      : 'https://www.dutchcowboys.nl/uploads/images/jan-paparazzi-hyves.jpeg';
+    req.session.register = {
+      name: req.body.name,
+      phone: req.body.phone,
+      avatar,
+    };
     return res.render('register1');
+  }
+
+  /**
+   * --Step Three--
+   */
   if (req.method === 'GET' && req.params.step === '3')
+    return res.redirect('/user/register');
+  if (req.method === 'POST' && req.params.step === '3') {
+    req.session.register.age = req.body.age;
+    req.session.register.mobility = req.body.mobility;
     return res.render('register2');
+  }
+
+  /**
+   * --Step Four--
+   */
   if (req.method === 'GET' && req.params.step === '4')
-    return res.render('registeroverview');
+    return res.redirect('/user/register');
+  if (req.method === 'POST' && req.params.step === '4') {
+    req.session.register.username = req.body.username;
 
-  // const user = {
-  //   email: req.body.email,
-  //   name: req.body.name,
-  //   avatar: req.body.files[0].location,
-  // };
-  //
-  // console.log(user);
+    const salt = await bcrypt.genSalt(10);
+    req.session.register.password = await bcrypt.hash(req.body.password, salt);
 
-  // const salt = await bcrypt.genSalt(10);
-  // user.password = await bcrypt.hash(req.body.password, salt);
-  //
-  // const dbUser = new User(user);
-  // dbUser.save();
+    return res.render('registeroverview', {
+      register: req.session.register,
+    });
+  }
 
-  // req.session.user = {
-  //   id: dbUser._id,
-  //   email: dbUser.email,
-  //   name: dbUser.name,
-  // };
+  if (req.method === 'GET' && req.params.step === '5')
+    return res.redirect('/user/register');
+  if (req.method === 'POST' && req.params.step === '5') {
+    const register = req.session.register;
+    const user = {
+      name: register.name,
+      avatar: register.avatar,
+      phone: register.phone,
+      age: register.age,
+      mobility: register.mobility,
+      username: register.username,
+      password: register.password,
+    };
 
-  // return res.redirect('/');
+    const dbUser = new User(user);
+    await dbUser.save();
+
+    req.session.user = {
+      id: dbUser._id,
+      username: dbUser.username,
+      name: dbUser.name,
+    };
+    return res.redirect('/pupples');
+  }
+
+  return res.redirect('/user/register');
 }
 
 async function account(req, res) {
-  // const dbUser = await User.findOne({ email: req.session.user.email }).exec();
-
-  // const user = {
-  //   name: dbUser.name,
-  //   email: dbUser.email,
-  // };
-
-  return res.render('account');
+  const dbUser = await User.findOne({
+    username: req.session.user.username,
+  }).exec();
+  return res.render('account', { user: dbUser });
 }
 
 async function logout(req, res) {
