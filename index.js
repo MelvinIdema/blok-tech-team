@@ -2,6 +2,7 @@ const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const express = require('express');
+const compression = require('compression');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const MongoStore = require('connect-mongo');
@@ -13,6 +14,8 @@ const PuppleRouter = require('./routes/Pupple.js');
 const app = express();
 
 const port = process.env.PORT || 3000;
+
+app.use(compression());
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
