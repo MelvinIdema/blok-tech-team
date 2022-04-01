@@ -7,18 +7,20 @@
 <section class="account-info">
     <!-- dit moet aangepast kunnen worden -->
     <div class="profile-pic-container">
-        <img src="/images/annie.jpeg" alt="Profielfoto">
-        <h2>Annie</h2> 
+        <img src="<%= user.avatar %>" alt="Profielfoto">
+        <h2><%= user.name %></h2>
     </div>
 
     <div class="information-container">
         <h3>Gebruikersnaam</h3>
-        <p>annie.thijssen1</p>
+        <p><%= user.username %></p>
 
         <h3>Telefoonnummer</h3>
-        <p>06 32857742</p>
+        <p><%= user.phone %></p>
 
-        <a href="#">Wachtwoord wijzigen</a>
+        <h3>Mobiliteit</h3>
+        <p><%= user.mobility %></p>
+
     </div>
 </section>
 <%- include('includes/footer'); -%>

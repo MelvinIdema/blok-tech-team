@@ -9,31 +9,31 @@
     </header>
 
     <section class="content-container">
-        <a href="/user/register">
+        <a href="/user/login">
             <img class="back-button" src="/images/arrowback.png" alt="terugpijl">
         </a>
 
-        <form action="/user/register2" method="post" class="vertical-form">
+        <form action="/user/register/3" method="post" class="vertical-form">
             <div class='form-group'>
                 <label class="content-container_label">Leeftijd</label>
-                <input class="inputregistreren" type="text">
+                <input class="inputregistreren" type="text" name="age">
             </div>
 
             <div class='form-group'>
                 <label class="content-container_label">Mobiliteit</label>
                 <div class="mobiliteitbuttons">
-                    <input type="radio" id="mobiliteit1" name="mobiliteit">
-                    <label for="mobiliteit1" class="mobiliteit1">
+                    <input type="radio" id="disability" name="mobility" value="disability">
+                    <label for="disability" class="mobiliteit1">
                         <img class="mobiliteitimage" src="/images/disability.png" alt="">
                     </label>
 
-                    <input type="radio" id="mobiliteit2" name="mobiliteit">
-                    <label for="mobiliteit2" class="mobiliteit2">
+                    <input type="radio" id="walker" name="mobility" value="walker">
+                    <label for="walker" class="mobiliteit2">
                         <img class="mobiliteitimage" src="/images/walker.png" alt="">
                     </label>
 
-                    <input type="radio" id="mobiliteit3" name="mobiliteit">
-                    <label for="mobiliteit3" class="mobiliteit3">
+                    <input type="radio" id="nothing" name="mobility" value="nothing">
+                    <label for="nothing" class="mobiliteit3">
                         <img class="mobiliteitimage" src="/images/niks.png" alt="">
                     </label>
                 </div>

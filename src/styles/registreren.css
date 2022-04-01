@@ -42,6 +42,11 @@
   margin-bottom: 24px;
 }
 
+.file-upload label {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .progressionbar {
   margin-top: 2em;
   margin-left: 1.5em;
@@ -148,6 +153,7 @@ input[type='file'] {
   width: 8em;
   height: 2.1em;
   margin: auto auto 0;
+  margin-bottom: 1em;
 }
 
 .dikgedruktoverzicht {
