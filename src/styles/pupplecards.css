@@ -22,6 +22,14 @@
   min-height: 200px;
 }
 
+.container i {
+  margin-right: 0.4em;
+}
+
+.cards p {
+  margin-top: 0;
+}
+
 .cards h1,
 .cards p {
   color: var(--black-color);
