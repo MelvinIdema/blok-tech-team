@@ -4,10 +4,10 @@
 
     <%- include('includes/header'); -%>
     <div class="cards">
-        <img src="/images/Buddy.jpg" alt="Puppy">
+        <img src="/images/<%= pupple.imgUrl %>" alt="Puppy">
         <div class="container">
-            <h1>Buddy</h1>
-            <p>DOA Amsterdam</p>
+            <h1><%= pupple.name %></h1>
+            <p><%= pupple.location %></p>
 
             <ul>
                 <li>1 jaar</li>
@@ -19,7 +19,7 @@
 
     <div class="buttons">
         <a href="#" class="decline">X</a>
-        <a href="#" class="next">Uitnodigen</a>
+        <a href="/pupple/info/<%= pupple._id %>" class="next">Uitnodigen</a>
     </div>
     
     
