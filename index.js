@@ -8,7 +8,6 @@ const cookieParser = require('cookie-parser');
 const MongoStore = require('connect-mongo');
 const UserRouter = require('./routes/User.js');
 const AppRouter = require('./routes/App.js');
-const ConfirmRouter = require('./routes/Confirm.js');
 const AppointmentsRouter = require('./routes/Appointments.js');
 const PuppleRouter = require('./routes/Pupple.js');
 const app = express();
@@ -36,7 +35,6 @@ app.use(
 
 app.use('/user', UserRouter);
 app.use('/', AppRouter);
-app.use('/confirm', ConfirmRouter);
 app.use('/appointments', AppointmentsRouter);
 app.use('/pupple', PuppleRouter);
 
