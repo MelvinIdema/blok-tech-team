@@ -97,7 +97,7 @@ async function register(req, res) {
 
     req.session.user = {
       id: dbUser._id,
-      email: dbUser.email,
+      username: dbUser.username,
       name: dbUser.name,
     };
     return res.redirect('/pupples');
@@ -107,14 +107,10 @@ async function register(req, res) {
 }
 
 async function account(req, res) {
-  // const dbUser = await User.findOne({ email: req.session.user.email }).exec();
-
-  // const user = {
-  //   name: dbUser.name,
-  //   email: dbUser.email,
-  // };
-
-  return res.render('account');
+  const dbUser = await User.findOne({
+    username: req.session.user.username,
+  }).exec();
+  return res.render('account', { user: dbUser });
 }
 
 async function logout(req, res) {
