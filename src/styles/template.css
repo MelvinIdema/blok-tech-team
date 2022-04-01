@@ -40,6 +40,12 @@ body {
   left: 50%;
   height: 100%;
   overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 h1,
