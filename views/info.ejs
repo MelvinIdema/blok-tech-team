@@ -1,97 +1,98 @@
+<title>Pupplefinder</title>
 
-    <title>Pupplefinder</title>
+<%- include('includes/head'); -%>
 
-    <%- include('includes/head'); -%>
+<%- include('includes/header'); -%>
+<img src="/images/<%= pupple.imgUrl %>" class="fotobuddy" alt="Foto buddy">
+<section class="info-card">
 
-    <%- include('includes/header'); -%>
-    <img src="/images/<%= pupple.imgUrl %>" class="fotobuddy" alt="Foto buddy">
-    <section class="info-card">
+    <div class="info-text">
+        <h1><%= pupple.name %></h1>
+        <p><%= pupple.description%></p>
+    </div>
 
-        <div class="info-text">
-            <h1><%= pupple.name %></h1>
-            <p><%= pupple.description%></p>
+    <form action="/appointments/confirm" method="post">
+        <input type="hidden" name="pupple" value="<%= pupple._id %>">
+        <div class="info-container">
+            <i class="fa fa-calendar-o fa-2x"></i>
+            <h3>Kies een dag</h3>
+        </div>
+        <div class="date-buttons">
+            <input type="radio" id="label1" name="choose-day" value="Ma 28/03">
+            <label for="label1">Ma 28/03</label>
+
+            <input type="radio" id="label2" name="choose-day" value="Di 29/03">
+            <label for="label2">Di 29/03</label>
+
+            <input type="radio" id="label3" name="choose-day" value="Wo 30/03">
+            <label for="label3">Wo 30/03</label>
+
+            <input type="radio" id="label4" name="choose-day" value="Do 31/03">
+            <label for="label4">Do 31/03</label>
+
+            <input type="radio" id="label5" name="choose-day" value="Vr 01/04">
+            <label for="label5">Vr 01/04</label>
+
+            <input type="radio" id="label6" name="choose-day" value="Za 02/04">
+            <label for="label6">Za 02/04</label>
         </div>
 
-        <form action="/appointments/confirm" method="post">
-            <input type="hidden" name="pupple" value="<%= pupple._id %>">
-            <div class="info-container">
-                <i class="fa fa-calendar-o fa-2x"></i>
-                <h3>Kies een dag</h3>
-            </div>
-            <div class="date-buttons">
-                <input type="radio" id="label1" name="choose-day" value="Ma 28/03">
-                <label for="label1">Ma 28/03</label>
 
-                <input type="radio" id="label2" name="choose-day" value="Di 29/03">
-                <label for="label2">Di 29/03</label>
+        <div class="info-container">
+            <i class="fa fa-clock-o fa-2x"></i>
+            <h3>Kies een tijd</h3>
+        </div>
 
-                <input type="radio" id="label3" name="choose-day" value="Wo 30/03">
-                <label for="label3">Wo 30/03</label>
+        <div class="date-buttons">
+            <input type="radio" id="time1" name="choose-time" value="8:00">
+            <label for="time1">8:00</label>
 
-                <input type="radio" id="label4" name="choose-day" value="Do 31/03">
-                <label for="label4">Do 31/03</label>
+            <input type="radio" id="time2" name="choose-time" value="9:00">
+            <label for="time2">9:00</label>
 
-                <input type="radio" id="label5" name="choose-day" value="Vr 01/04">
-                <label for="label5">Vr 01/04</label>
+            <input type="radio" id="time3" name="choose-time" value="10:00">
+            <label for="time3">10:00</label>
 
-                <input type="radio" id="label6" name="choose-day" value="Za 02/04">
-                <label for="label6">Za 02/04</label>
-            </div>
+            <input type="radio" id="time4" name="choose-time" value="11:00">
+            <label for="time4">11:00</label>
 
+            <input type="radio" id="time5" name="choose-time" value="12:00">
+            <label for="time5">12:00</label>
 
-            <div class="info-container">
-                <i class="fa fa-clock-o fa-2x"></i>
-                <h3>Kies een tijd</h3>
-            </div>
+            <input type="radio" id="time6" name="choose-time" value="13:00">
+            <label for="time6">13:00</label>
 
-            <div class="date-buttons">
-                <input type="radio" id="time1" name="choose-time" value="8:00">
-                <label for="time1">8:00</label>
+            <input type="radio" id="time7" name="choose-time" value="14:00">
+            <label for="time7">14:00</label>
 
-                <input type="radio" id="time2" name="choose-time" value="9:00">
-                <label for="time2">9:00</label>
+            <input type="radio" id="time8" name="choose-time" value="15:00">
+            <label for="time8">15:00</label>
 
-                <input type="radio" id="time3" name="choose-time" value="10:00">
-                <label for="time3">10:00</label>
+            <input type="radio" id="time9" name="choose-time" value="16:00">
+            <label for="time9">16:00</label>
 
-                <input type="radio" id="time4" name="choose-time" value="11:00">
-                <label for="time4">11:00</label>
+            <input type="radio" id="time10" name="choose-time" value="17:00">
+            <label for="time10">17:00</label>
 
-                <input type="radio" id="time5" name="choose-time" value="12:00">
-                <label for="time5">12:00</label>
+            <input type="radio" id="time11" name="choose-time" value="18:00">
+            <label for="time11">18:00</label>
 
-                <input type="radio" id="time6" name="choose-time" value="13:00">
-                <label for="time6">13:00</label>
+            <input type="radio" id="time12" name="choose-time" value="19:00">
+            <label for="time12">19:00</label>
+        </div>
 
-                <input type="radio" id="time7" name="choose-time" value="14:00">
-                <label for="time7">14:00</label>
+        <div class="map-container">
+            <i class="fa fa-map-marker fa-2x"></i>
+            <h3>Vind <%= pupple.name%></h3>
+            <div id="map"></div>
+        </div>
 
-                <input type="radio" id="time8" name="choose-time" value="15:00">
-                <label for="time8">15:00</label>
-
-                <input type="radio" id="time9" name="choose-time" value="16:00">
-                <label for="time9">16:00</label>
-
-                <input type="radio" id="time10" name="choose-time" value="17:00">
-                <label for="time10">17:00</label>
-
-                <input type="radio" id="time11" name="choose-time" value="18:00">
-                <label for="time11">18:00</label>
-
-                <input type="radio" id="time12" name="choose-time" value="19:00">
-                <label for="time12">19:00</label>
-            </div>
-
-            <div class="info-container">
-                <i class="fa fa-map-marker fa-2x"></i>
-                <h3>Vind <%= pupple.name%></h3>
-            </div>
-
-            <div class="buttons">
+        <div class="buttons">
             <a href="/pupple" class="decline">X</a>
             <button class="volgende">Bevestigen</button>
-            </div>
-        </form>
-    </section>  
+        </div>
+    </form>
+</section>
 
+<%- include('includes/map-scripts'); -%>
 <%- include('includes/footer'); -%>
