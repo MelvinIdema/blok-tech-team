@@ -1,35 +1,17 @@
-.card {
-  background-color: var(--grey-color);
-  border-radius: 2em;
-  width: 100vw;
-  height: 35em;
-
-  position: fixed;
-  bottom: 0;
-  box-shadow: 0 5px 20px var(--dark-orange-color);
-  z-index: 0;
+.content-container.card {
+  padding: 1em 1em 2.1em;
 }
 
 .buddy {
   display: flex;
   margin-top: 2.5em;
-  margin-left: 1em;
 }
 
-.benno {
-  display: flex;
-  margin-top: 3em;
-  margin-left: 1em;
-}
-
-.buddy img,
-.benno img {
+.buddy img {
   width: 7em;
   height: 7em;
   border-radius: 100%;
-
   object-fit: cover;
-  z-index: 100;
 }
 
 .appointment1,
@@ -37,13 +19,11 @@
   background-color: var(--dark-grey-color);
   font-family: josefin-sans, sans-serif;
   font-size: 1em;
-
   display: inline-block;
   padding: 1.3em;
   margin-left: 1em;
-  width: 14.2em;
+  width: 100%;
   border-radius: 2em;
-  z-index: 100;
 }
 
 .appointment1 p:first-of-type,
@@ -71,12 +51,11 @@ a {
   font-size: 1.5em;
   text-decoration: none;
   border: none;
-
   border-radius: 0.5em;
   width: 11em;
   height: 2.1em;
   position: absolute;
-  margin-top: 3.4em;
+  margin-top: 2em;
   justify-content: center;
   align-items: center;
   right: 0;

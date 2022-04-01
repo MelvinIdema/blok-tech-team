@@ -1,33 +1,26 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
 
-<h1> Mijn afspraken </h1>
-<p> Hier staan al jouw geplande puppledates! </p>
+<main class='full-vertical'>
+    <header>
+        <h1> Mijn afspraken </h1>
+        <p> Hier staan al jouw geplande puppledates! </p>
+    </header>
+    <section class="content-container card">
+        <% appointments.forEach(appointment => { %>
+        <div class="buddy">
+            <img src="/images/<%= appointment.image %>" alt="dog-buddy">
+            <div class="appointment1">
+                   <p> <%= appointment.day %>  |  <%= appointment.time %> uur </p>
+                    <p> <%= appointment.name %> </p>
+                    <p> <%= appointment.locationName %> </p>
+            </div>
+        </div>
+        <% }) %>
 
-<section class="card"> 
-
-<div class="buddy">
-    <img src="/images/buddy.jpg" alt="dog-buddy"> 
-    <div class="appointment1"> 
-           <p> Do 31/03  |  8:00 uur </p>
-            <p> Buddy </p>
-            <p> DOA Amsterdam </p>
-    </div>
-</div>
-
-<div class="benno"> 
-    <img src="/images/benno.jpeg" alt="dog-benno"> 
-    <div class="appointment2"> 
-        <p>Ma 11/04  |  11:00 uur </p>
-        <p> Benno </p>
-        <p> Dierenopvang Lisse  </p>
-    </div>
-</div>
-
-<a href="/pupple" class="nieuwe-puppledate">Nieuwe puppledate</a>
-
-</section>
-    
+        <a href="/pupple" class="nieuwe-puppledate">Nieuwe puppledate</a>
+    </section>
+</main>
 
 
 
