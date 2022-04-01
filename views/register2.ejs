@@ -1,29 +1,32 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
 
-<img src="/images/progressionbar3.png" class="progressionbar" alt="progressionbar">
+<main class="full-vertical">
+    <header>
+        <img src="/images/progressionbar3.png" class="progressionbar" alt="progressionbar">
+        <h1 class="stapheader">Stap 3</h1>
+        <p class="pelementinlog">Vul jouw gebruikersnaam in</p>
+    </header>
 
-<h1 class="stapheader">Stap 3</h1>
+    <section class="content-container">
+        <a href="/user/register1">
+            <img class="back-button" src="/images/arrowback.png" alt="terugpijl">
+        </a>
 
-<p class="pelementinlog">Vul jouw gebruikersnaam in</p>
+        <form class="vertical-form" action="/user/registeroverview" method="post">
 
-<div class="inlogscherm2">
-    <a href="/user/register1">
-        <img class="terug" src="/images/arrowback.png" alt="terugpijl">
-    </a>
-    <form action="/user/registeroverview">
+            <div class='form-group'>
+                <label class="content-container_label" for="username">Gebruikersnaam</label>
+                <input class="inputregistreren" type="text" name="username">
+            </div>
 
-    <p class="pinform">Gebruikersnaam</p>
-    <input class="inputregistreren" type="text">
+            <div class='form-group'>
+                <label class="content-container_label" for="password">Wachtwoord</label>
+                <input class="inputregistreren" type="password" name="password">
+            </div>
 
-    <p class="pinform">Wachtwoord</p>
-    <input class="inputregistreren" type="password">
-
-    <div class="centerbuttondiv">
-    <button class="volgende">Volgende</button>
-    </div>
-
-    </form>
-</div>
-
+            <button class="volgende">Volgende</button>
+        </form>
+    </section>
+</main>
 

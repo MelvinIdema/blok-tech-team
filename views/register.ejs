@@ -1,30 +1,37 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
 
-<img src="/images/progressionbar1.png" class="progressionbar" alt="progressionbar">
+<main class='full-vertical'>
+    <header>
+        <img src="/images/progressionbar1.png" class="progressionbar" alt="progressionbar">
+        <h1 class="stapheader">Stap 1</h1>
+        <p class="pelementinlog">Upload een profielfoto en vul je naam in</p>
+    </header>
+    <section class="content-container">
+        <a href="/user/login">
+            <img class="terug" src="/images/arrowback.png" alt="terugpijl">
+        </a>
 
-<h1 class="stapheader">Stap 1</h1>
+        <form action="/user/register1" method="post" class="vertical-form">
+            <p class="file-upload">
+                <label for="avatar" id="labelavatar">
+                    <img class="plusje" src="/images/plusaddavatar.png" alt="terugpijl">
+                    <input type="file" name="avatar" id="avatar" accept="image/jpeg, image/png">
+                </label>
+            </p>
 
-<p class="pelementinlog">Upload een profielfoto en vul je naam in</p>
+            <div class="form-group">
+                <label class="content-container_label" for="name">Naam</label>
+                <input class="inputregistreren" type="text" name="name" id="name">
+            </div>
 
-<div class="inlogscherm">
-    <a href="/user/login">
-        <img class="terug" src="/images/arrowback.png" alt="terugpijl">
-    </a>
-    <form action="/user/register1" method="post">
-        <p class="file-upload">
-            <label for="avatar" id="labelavatar">
-                <img class="plusje" src="/images/plusaddavatar.png" alt="terugpijl">
-                <input type="file" name="avatar" id="avatar" accept="image/jpeg, image/png">
-             </label>
-        </p>
-        <p class="pinform">Naam</p>
-        <input class="inputregistreren" type="text" name="name">
-        <p class="pinform">Telefoonnummer</p>
-        <input class="inputregistreren" type="tel" name="phone">
+            <div class="form-group">
+                <label class="content-container_label" for="phone">Telefoonnummer</label>
+                <input class="inputregistreren" type="tel" name="phone" id="phone">
+            </div>
 
-        <div class="centerbuttondiv">
             <button class="volgende">Volgende</button>
-        </div>
-    </form>
-</div>
+        </form>
+
+    </section>
+</main>

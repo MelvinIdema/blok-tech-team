@@ -1,40 +1,45 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
 
-<img src="/images/progressionbar2.png" class="progressionbar" alt="progressionbar">
+<main class='full-vertical'>
+    <header>
+        <img src="/images/progressionbar2.png" class="progressionbar" alt="progressionbar">
+        <h1 class="stapheader">Stap 2</h1>
+        <p class="pelementinlog">Vul jouw leeftijd en mobiliteit in</p>
+    </header>
 
-<h1 class="stapheader">Stap 2</h1>
+    <section class="content-container">
+        <a href="/user/register">
+            <img class="back-button" src="/images/arrowback.png" alt="terugpijl">
+        </a>
 
-<p class="pelementinlog">Vul jouw leeftijd en mobiliteit in</p>
+        <form action="/user/register2" method="post" class="vertical-form">
+            <div class='form-group'>
+                <label class="content-container_label">Leeftijd</label>
+                <input class="inputregistreren" type="text">
+            </div>
 
-<div class="inlogscherm1">
-    <a href="/user/register">
-        <img class="terug" src="/images/arrowback.png" alt="terugpijl">
-    </a>
-    <form action="/user/register2">
+            <div class='form-group'>
+                <label class="content-container_label">Mobiliteit</label>
+                <div class="mobiliteitbuttons">
+                    <input type="radio" id="mobiliteit1" name="mobiliteit">
+                    <label for="mobiliteit1" class="mobiliteit1">
+                        <img class="mobiliteitimage" src="/images/disability.png" alt="">
+                    </label>
 
-    <p class="pinform">Leeftijd</p>
-    <input class="inputregistreren" type="text">
+                    <input type="radio" id="mobiliteit2" name="mobiliteit">
+                    <label for="mobiliteit2" class="mobiliteit2">
+                        <img class="mobiliteitimage" src="/images/walker.png" alt="">
+                    </label>
 
+                    <input type="radio" id="mobiliteit3" name="mobiliteit">
+                    <label for="mobiliteit3" class="mobiliteit3">
+                        <img class="mobiliteitimage" src="/images/niks.png" alt="">
+                    </label>
+                </div>
+            </div>
 
-    <p class="pinform">Mobiliteit</p>
-
-<div class="centerdiv">
-<div class="mobiliteitbuttons">
-
-    <input type="radio" id="mobiliteit1" name="mobiliteit1">
-    <label for="mobiliteit1" class="mobiliteit1"><img class="mobiliteitimage" src="/images/disability.png" alt=""></label>
-
-    <input type="radio" id="mobiliteit2" name="mobiliteit2">
-    <label for="mobiliteit2" class="mobiliteit2"><img class="mobiliteitimage" src="/images/walker.png" alt=""></label>
-
-    <input type="radio" id="mobiliteit3" name="mobiliteit3">
-    <label for="mobiliteit3" class="mobiliteit3"><img class="mobiliteitimage" src="/images/niks.png" alt=""></label> 
-
-</div>
-</div>
-    <div class="centerbuttondiv">
-    <button class="volgende">Volgende</button>
-    </div>
-    </form>
-</div>
+            <button class="volgende">Volgende</button>
+        </form>
+    </section>
+</main>
