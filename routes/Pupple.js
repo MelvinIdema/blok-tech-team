@@ -4,7 +4,11 @@ const authenticated = require('./../app/middlewares/authenticated.js');
 const PuppleRouter = express.Router();
 
 PuppleRouter.use(authenticated);
+
 PuppleRouter.get('/', PuppleController.cards);
 PuppleRouter.get('/info/:id', PuppleController.info);
+
+// API
+PuppleRouter.get('/api', PuppleController.api);
 
 module.exports = PuppleRouter;
