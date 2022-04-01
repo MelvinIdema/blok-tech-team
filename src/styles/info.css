@@ -1,3 +1,10 @@
+.fotobuddy {
+  margin-top: 6em;
+  max-width: 100%;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
 .info-card {
   background-color: var(--grey-color);
 }
@@ -24,14 +31,7 @@
   color: var(--black-color);
 }
 
-.fotobuddy {
-  margin-top: 6em;
-  max-width: 100%;
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-}
-
-.fa {
+.info-container .fa {
   max-width: 12%;
 }
 
@@ -58,4 +58,8 @@
 
 .date-buttons input[type='radio']:checked + label {
   border: 4px solid var(--green-color);
+}
+
+.info-card .buttons .decline {
+  background-color: var(--dark-grey-color);
 }
