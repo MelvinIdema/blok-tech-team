@@ -1,3 +1,8 @@
+#map {
+  height: 20em;
+  width: 100%;
+}
+
 .fotobuddy {
   margin-top: 6em;
   max-width: 100%;
@@ -8,6 +13,7 @@
 .info-card {
   background-color: var(--grey-color);
 }
+
 .info-text {
   display: flex;
   flex-direction: column;
@@ -17,6 +23,7 @@
 
 .info-text h1,
 .info-container h3,
+.map-container h3,
 .info-text p {
   color: var(--black-color);
   padding: 0;
@@ -29,6 +36,19 @@
   gap: 1em;
   padding: 20px;
   color: var(--black-color);
+}
+
+.map-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  padding: 20px;
+  color: var(--black-color);
+}
+
+.map-container .fa,
+.map-container h3 {
+  align-self: center;
 }
 
 .info-container .fa {
@@ -56,7 +76,7 @@
   text-align: center;
 }
 
-.date-buttons input[type='radio']:checked + label {
+.date-buttons input[type='radio']:checked+label {
   border: 4px solid var(--green-color);
 }
 
