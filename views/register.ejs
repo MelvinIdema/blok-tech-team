@@ -1,71 +1,37 @@
 <%- include('includes/head'); -%>
 <%- include('includes/header'); -%>
 
-<!-- <section>
-
+<main class='full-vertical'>
     <header>
-        <h1>Registreren</h1>
+        <img src="/images/progressionbar1.png" class="progressionbar" alt="progressionbar">
+        <h1 class="stapheader">Stap 1</h1>
+        <p class="pelementinlog">Upload een profielfoto en vul je naam in</p>
     </header>
-    <form action="/user/register" method="post">
-        <fieldset>
-            <legend>Account Information</legend>
+    <section class="content-container">
+        <a href="/user/login">
+            <img class="terug" src="/images/arrowback.png" alt="terugpijl">
+        </a>
+
+        <form action="/user/register1" method="post" class="vertical-form">
             <p class="file-upload">
-                <label for="avatar">
+                <label for="avatar" id="labelavatar">
+                    <img class="plusje" src="/images/plusaddavatar.png" alt="terugpijl">
                     <input type="file" name="avatar" id="avatar" accept="image/jpeg, image/png">
                 </label>
             </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </p>
-            <p>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-            </p>
-            <p>
-                <label for="rpassword">Password</label>
-                <input type="password" name="rpassword" id="rpassword" required>
-            </p>
-            <p>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-            </p>
-            <p class="controls">
-                <button type="submit">Sign Up</button>
-            </p>
-        </fieldset>
-    </form>
-    <footer>
-        <a href="/user/login">Heb je al een account?</a>
-    </footer>
-</section> -->
 
-<img src="/images/progressionbar1.png" class="progressionbar" alt="progressionbar">
+            <div class="form-group">
+                <label class="content-container_label" for="name">Naam</label>
+                <input class="inputregistreren" type="text" name="name" id="name">
+            </div>
 
-<h1 class="stapheader">Stap 1</h1>
+            <div class="form-group">
+                <label class="content-container_label" for="phone">Telefoonnummer</label>
+                <input class="inputregistreren" type="tel" name="phone" id="phone">
+            </div>
 
-<p class="pelementinlog">Upload een profielfoto en vul je naam in</p>
+            <button class="volgende">Volgende</button>
+        </form>
 
-<div class="inlogscherm">
-    <a href="/user/login">
-        <img class="terug" src="/images/arrowback.png" alt="terugpijl">
-    </a>
-    <form action="/user/register1">
-    <p class="file-upload">
-        <label for="avatar" id="labelavatar">
-            <input type="file" name="avatar" id="avatar" accept="image/jpeg, image/png">
-         </label>
-    </p>
-    <p class="pinform">Naam</p>
-    <input class="inputregistreren" type="text">
-    <p class="pinform">Telefoonnummer</p>
-    <input class="inputregistreren" type="tel">
-    
-
-    <div class="centerbuttondiv">
-    <button class="volgende">Volgende</button>
-    </div>
-    </form>
-</div>
-
-
+    </section>
+</main>

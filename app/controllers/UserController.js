@@ -8,7 +8,7 @@ async function login(req, res) {
     email: req.body.email,
     password: req.body.password,
   };
-  // TODO: User Schema
+
   const dbUser = await User.findOne({ email: user.email });
 
   if (!dbUser || !bcrypt.compareSync(user.password, dbUser.password)) {
@@ -23,39 +23,46 @@ async function login(req, res) {
 }
 
 async function register(req, res) {
-  if (req.method === 'GET') return res.render('register');
+  /**
+   * --Step One--
+   * Just shows the register form.
+   */
+  if ((req.method === 'GET' && req.params.step === '1') || !req.params.step)
+    return res.render('register');
 
-  console.log(req.body);
-  const user = {
-    email: req.body.email,
-    name: req.body.name,
-  };
+  /**
+   * --Step Two--
+   * Now we need save the previous values from step 1
+   * in a Session Cookie.
+   */
+  if (req.method === 'GET' && req.params.step === '2')
+    return res.render('register1');
+  if (req.method === 'GET' && req.params.step === '3')
+    return res.render('register2');
+  if (req.method === 'GET' && req.params.step === '4')
+    return res.render('registeroverview');
 
-  const salt = await bcrypt.genSalt(10);
-  user.password = await bcrypt.hash(req.body.password, salt);
+  // const user = {
+  //   email: req.body.email,
+  //   name: req.body.name,
+  //   avatar: req.body.files[0].location,
+  // };
+  //
+  // console.log(user);
 
-  const dbUser = new User(user);
-  dbUser.save();
+  // const salt = await bcrypt.genSalt(10);
+  // user.password = await bcrypt.hash(req.body.password, salt);
+  //
+  // const dbUser = new User(user);
+  // dbUser.save();
 
-  req.session.user = {
-    id: dbUser._id,
-    email: dbUser.email,
-    name: dbUser.name,
-  };
+  // req.session.user = {
+  //   id: dbUser._id,
+  //   email: dbUser.email,
+  //   name: dbUser.name,
+  // };
 
-  return res.redirect('/');
-}
-
-function register1(req, res) {
-  return res.render('register1');
-}
-
-function register2(req, res) {
-  return res.render('register2');
-}
-
-function registeroverzicht(req, res) {
-  return res.render('registeroverzicht');
+  // return res.redirect('/');
 }
 
 async function account(req, res) {
@@ -77,9 +84,6 @@ async function logout(req, res) {
 module.exports = {
   login,
   register,
-  register1,
-  register2,
-  registeroverzicht,
   account,
   logout,
 };

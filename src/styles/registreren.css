@@ -1,31 +1,45 @@
-.inlogscherm {
-  background-color: var(--grey-color);
-  border-radius: 2em 2em 0em 0em;
-  padding-bottom: 4em;
+.full-vertical {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 86px);
 }
 
-.inlogscherm1 {
-  background-color: var(--grey-color);
-  border-radius: 2em 2em 0em 0em;
-  padding-bottom: 11.2em;
+.full-vertical header {
+  margin-bottom: 1em;
 }
 
-.inlogscherm2 {
+.content-container {
   background-color: var(--grey-color);
-  border-radius: 2em 2em 0em 0em;
-  padding-bottom: 17em;
+  border-radius: 2em 2em 0 0;
+  height: 100%;
+  padding: 2em;
 }
 
-.inlogscherm3 {
-  background-color: var(--grey-color);
-  border-radius: 2em 2em 0em 0em;
-  padding-bottom: 4em;
+.back-button {
+  margin-bottom: 24px;
 }
 
-.inlogscherm4 {
-  background-color: var(--grey-color);
-  border-radius: 2em 2em 0em 0em;
-  padding-bottom: 22em;
+.content-container_label {
+  display: block;
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 0 0 0.2em;
+  margin-bottom: 8px;
+}
+
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 50px);
+}
+
+.vertical-form.login {
+  margin-top: 2em;
+}
+
+.form-group {
+  margin-bottom: 24px;
 }
 
 .progressionbar {
@@ -38,24 +52,15 @@
 }
 
 .pelementinlog {
-  margin-bottom: 1em;
   max-width: 80%;
-}
-
-.terug {
-  margin-left: 3em;
-  margin-top: 2em;
 }
 
 .inputregistreren {
-  max-width: 80%;
-  min-width: 80%;
+  width: 80%;
   padding: 0.5em;
   border-radius: 0.5em;
   background-color: var(--dark-grey-color);
   border: none;
-  margin: auto;
-  display: block;
 }
 
 input[type='file'] {
@@ -63,27 +68,49 @@ input[type='file'] {
 }
 
 #labelavatar {
-  border: none;
-  border-radius: 8em;
-  padding: 4em;
-  background-color: var(--dark-grey-color);
-  margin: auto;
   display: block;
+  position: relative;
+  margin: auto auto 30px;
+  aspect-ratio: 1/1;
+  width: 125px;
+  background-color: var(--dark-grey-color);
+  border-radius: 100%;
   cursor: pointer;
-  max-width: 30%;
+}
+
+#labelavatar img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .pinform {
   color: var(--black-color);
-  margin-left: 0.8em;
   padding-bottom: 0.2em;
 }
 
 .pinform1 {
   color: var(--black-color);
-  margin-top: 0em;
+  margin-top: 0;
   margin-bottom: 1em;
-  margin-left: 0.8em;
+  padding-left: 0;
+}
+
+.mobiliteitimage {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+}
+
+.mobiliteitbuttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  width: 100%;
 }
 
 .mobiliteitbuttons input[type='radio'] {
@@ -92,22 +119,22 @@ input[type='file'] {
   width: 0;
 }
 
-.mobiliteitbuttons label {
-  display: inline-block;
-  background-color: var(--dark-grey-color);
-  padding: 2.7em;
-  border-radius: 10em;
-  height: 2em;
-  margin-top: 1em;
-  margin-left: 0.8em;
-  margin-right: 0.8em;
+.mobiliteitbuttons input[type='radio']:checked + label {
+  border: 4px solid var(--green-color);
 }
 
-.centerdiv {
-  margin-left: 2em;
+.mobiliteitbuttons label {
+  position: relative;
+  display: inline-block;
+  background-color: var(--dark-grey-color);
+  padding: 1em 1.2em;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
 }
 
 .volgende {
+  display: block;
   background-color: var(--green-color);
   color: var(--grey-color);
   font-family: ubuntu, sans-serif;
@@ -116,22 +143,14 @@ input[type='file'] {
   text-decoration: none;
   border: none;
   text-align: center;
-
   padding: 0.5em;
   border-radius: 0.5em;
   width: 8em;
   height: 2.1em;
-  margin: 0;
-}
-
-.centerbuttondiv {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
+  margin: auto auto 0;
 }
 
 .dikgedruktoverzicht {
   color: var(--black-color);
-  margin-left: 2.3em;
   padding-top: 0.2em;
 }

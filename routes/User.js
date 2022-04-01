@@ -1,4 +1,5 @@
 const express = require('express');
+const upload = require('../app/services/S3.js');
 const UserController = require('./../app/controllers/UserController.js');
 
 const UserRouter = express.Router();
@@ -8,24 +9,16 @@ UserRouter.get('/login', UserController.login);
 UserRouter.post('/login', UserController.login);
 
 // Register Page
-UserRouter.get('/register', UserController.register);
-UserRouter.post('/register', UserController.register);
-
-// Register1 Page
-UserRouter.get('/register1', UserController.register1);
-UserRouter.post('/register1', UserController.register1);
-
-// Register2 Page
-UserRouter.get('/register2', UserController.register2);
-UserRouter.post('/register2', UserController.register2);
-
-// Registeroverzicht Page
-UserRouter.get('/registeroverzicht', UserController.registeroverzicht);
-UserRouter.post('/registeroverzicht', UserController.registeroverzicht);
+UserRouter.get('/register/:step?', UserController.register);
+UserRouter.post(
+  '/register/:step?',
+  upload.array('avatar'),
+  UserController.register
+);
 
 // Account Page
 UserRouter.get('/account', UserController.account);
-UserRouter.post('/account', UserController.account);
+UserRouter.post('/account', upload.array('avatar'), UserController.account);
 
 // Logout
 UserRouter.get('/logout', UserController.logout);
