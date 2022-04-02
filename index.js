@@ -37,6 +37,9 @@ app.use('/user', UserRouter);
 app.use('/', AppRouter);
 app.use('/appointments', AppointmentsRouter);
 app.use('/pupple', PuppleRouter);
+app.get('*', (req, res) => {
+  res.render('404');
+});
 
 app.set('view engine', 'ejs');
 app.listen(port, () => console.log('Listening on port: 3000'));
