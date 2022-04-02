@@ -40,7 +40,7 @@ async function register(req, res) {
   if (req.method === 'GET' && req.params.step === '2')
     return res.redirect('/user/register');
   if (req.method === 'POST' && req.params.step === '2') {
-    const avatar = req.files
+    const avatar = req.files[0]
       ? req.files[0].location
       : 'https://www.dutchcowboys.nl/uploads/images/jan-paparazzi-hyves.jpeg';
     req.session.register = {
@@ -86,7 +86,7 @@ async function register(req, res) {
       name: register.name,
       avatar: register.avatar,
       phone: register.phone,
-      age: register.age,
+      age: isNaN(register.age) ? 0 : register.age,
       mobility: register.mobility,
       username: register.username,
       password: register.password,
