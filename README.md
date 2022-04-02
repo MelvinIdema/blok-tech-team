@@ -1,7 +1,10 @@
 <h1 align='center'>
   <img src='https://i.imgur.com/r0X7eXT.png' alt='Pupples' height="75"/> <br>
 </h1>
-<p align="center"> Matching Lonely Elderly with Shelter Animals for Playdates</p>
+<p align="center">
+  Matching Lonely Elderly with Shelter Animals for Playdates <br>
+  <a href="https://blok-tech-team-1.herokuapp.com/"> blok-tech-team-1.herokuapp.com/ </a>
+</p>
 
 <div align="center">
 
