@@ -2,8 +2,7 @@
   background-color: var(--grey-color);
   border-radius: 2em;
   width: 100%;
-  height: 35em;
-
+  height: 38em;
   position: fixed;
   bottom: 0;
   box-shadow: 0 5px 20px var(--dark-orange-color);
@@ -25,6 +24,10 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+
+.profile-pic-container a {
+  color: var(--green-color);
 }
 
 .profile-pic-container img {
