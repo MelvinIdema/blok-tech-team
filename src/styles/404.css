@@ -1,0 +1,38 @@
+.error h1 {
+  font-size: 8em;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 0.2em;
+  padding: 0;
+  color: var(--pupple-shadow-color);
+}
+
+.error h2 {
+  padding-left: 0.8em;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.error h2:last-of-type {
+  padding-left: 0.8em;
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+}
+
+.error-dog {
+  width: 20em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error .match-shadow {
+  background-color: var(--pupple-shadow-color);
+  width: 16em;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-top: -6.2em;
+}
