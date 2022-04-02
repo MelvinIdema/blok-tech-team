@@ -19,3 +19,14 @@ L.marker([latitude, longitude], 13)
   .addTo(map)
   .bindPopup(`${dogsName} location`)
   .openPopup();
+
+/* Set market for current location */
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(setMarker);
+}
+
+function setMarker(position) {
+  L.marker([position.coords.latitude, position.coords.longitude], 13)
+    .addTo(map)
+    .bindPopup(`Jouw locatie`);
+}
