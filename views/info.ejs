@@ -94,5 +94,10 @@
     </form>
 </section>
 
+<script>
+    var longitude = <%= pupple.location.lon %>;
+    var latitude = <%= pupple.location.lat %>;
+    var dogsName = `<%= pupple.name %>`;
+</script>
 <%- include('includes/map-scripts'); -%>
 <%- include('includes/footer'); -%>

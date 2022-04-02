@@ -15,7 +15,7 @@ L.tileLayer(
 ).addTo(map);
 
 /* Set marker at latlng */
-L.marker([52.302572, 4.865258], 13)
+L.marker([latitude, longitude], 13)
   .addTo(map)
-  .bindPopup('Indie location')
+  .bindPopup(`${dogsName} location`)
   .openPopup();
