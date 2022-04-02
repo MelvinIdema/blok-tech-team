@@ -2,7 +2,7 @@
 <%- include('includes/header'); -%>
 
 <h1> Je hebt een Pupple! </h1>
-<p> Jij en Buddy zijn een match! Klik op bevestigen om jouw pupple date vast te zetten. </p>
+<p> Jij en <%= pupple %> zijn een match! Klik op bevestigen om jouw pupple date vast te zetten. </p>
 
 <img class="home-dog" src="/images/match-dog.png" alt="match-dog"> 
 
@@ -10,7 +10,9 @@
 
 <div class="buttons"> 
 <a href="#" class="decline">X</a>
-<a href="#" class="next">Bevestigen</a>
+    <form action='/appointments/create' method='post'>
+        <button class="next">Bevestigen</button>
+    </form>
 </div>
 
 <%- include('includes/footer'); -%>

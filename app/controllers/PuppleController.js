@@ -18,7 +18,12 @@ async function info(req, res) {
   });
 }
 
+async function api(req, res) {
+  return res.json(await Pupple.find({}));
+}
+
 module.exports = {
   cards,
   info,
+  api,
 };

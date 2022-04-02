@@ -1,20 +1,3 @@
-.full-vertical {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 86px);
-}
-
-.full-vertical header {
-  margin-bottom: 1em;
-}
-
-.content-container {
-  background-color: var(--grey-color);
-  border-radius: 2em 2em 0 0;
-  height: 100%;
-  padding: 2em;
-}
-
 .back-button {
   margin-bottom: 24px;
 }
