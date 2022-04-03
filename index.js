@@ -37,6 +37,7 @@ app.use('/user', UserRouter);
 app.use('/', AppRouter);
 app.use('/appointments', AppointmentsRouter);
 app.use('/pupple', PuppleRouter);
+
 app.get('*', (req, res) => {
   res.render('404');
 });
