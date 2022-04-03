@@ -2,8 +2,10 @@ const Pupple = require('./../models/Pupple.js');
 
 async function cards(req, res) {
   const pupples = await Pupple.find({});
-  const randomPupple = Math.floor(Math.random() * pupples.length);
-
+  const randomPupple = req.session.seenBumble
+    ? Math.floor(Math.random() * pupples.length)
+    : 11;
+  req.session.seenBumble = true;
   return res.render('pupplecards', {
     pupple: pupples[randomPupple],
   });
